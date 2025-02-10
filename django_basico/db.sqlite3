@@ -1,8 +1,13 @@
- CREATE TABLE Pessoa(
-   cpf char(11) PRIMARY key,
-   email  varchar(50) not null UNIQUE,
-   nome varchar(150) NOT null,
-   data_nasc date not null,
-   endereco varchar(300) not null,
-   telefone varchar(15) null
-);
+CREATE Table Cadastro_empresa(
+  id integer PRIMARY KEY AUTOINCREMENT,
+  cnpj TEXT NOT NULL UNIQUE,
+  razao_social text NOT NULL,
+  nome_social text NOT NULL,
+  area_atuacao text  NOT NULL,
+  tempo_area text NOT null,
+  capital_social numeric(10,2) not NULL,
+  num_funcionario_clt integer not NULL,
+  num_funcionario_3 integer not NULL,
+  num_estagio integer NOT NULL,
+  num_socio integer not NULL
+)

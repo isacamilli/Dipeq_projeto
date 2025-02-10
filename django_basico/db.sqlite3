@@ -1,0 +1,8 @@
+ CREATE TABLE Pessoa(
+   cpf char(11) PRIMARY key,
+   email  varchar(50) not null UNIQUE,
+   nome varchar(150) NOT null,
+   data_nasc date not null,
+   endereco varchar(300) not null,
+   telefone varchar(15) null
+);

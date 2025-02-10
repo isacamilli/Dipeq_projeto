@@ -16,12 +16,91 @@
             <input type="image" id="lupa" src="Imagens/lupa.png" alt="">
             <input type="text" id="barra" placeholder="Pesquisar empresa">
         </form>
-        <a href="cadastro_emp.html" id="cadastrar">
+        <!-- <a href="cadastro_emp.html" id="cadastrar">
             <button type="submit">Cadastrar Empresa</button>
-        </a>
+        </a> -->
     </header>
     <main>
-        
+        <h1>Cadastro</h1>
+        <div>
+            <form action="ativar_form" id="form1" class="primeiro_form">
+                <div class="formulario">
+                    <label for="cnpj">CNPJ:</label>
+                    <input type="text" id="cnpj">
+                </div>
+                <div class="formulario">
+                    <label for="razao">Razão social:</label>
+                    <INput type="text" id="razao">
+                </div>
+                <div class="formulario">
+                    <label for="nome">Nome Social:</label>
+                    <input type="text" id="nome">
+                </div><div class="formulario">
+                    <label for="area_atuacao">Área de atuação:</label>
+                    <input type="text" id="area_atuacao">
+                </div>
+                <div class="formulario">
+                    <label for="tempo_area">Tempo de atuação:</label>
+                    <input type="text" id="tempo_area">
+                </div>
+                <input type="submit" value="Proximo">
+            </form>
+            
+
+            <form action="index.html" id="form2" class="primeiro_form">
+                <div class="formulario">
+                    <label for="capital">Capital social:</label>
+                    <input type="text" id="capital">
+                </div>
+                <div class="formulario">
+                    <label for="num_clt">Funcionarios CLT:</label>
+                    <INput type="text" id="num_clt">
+                </div>
+                <div class="formulario">
+                    <label for="nome">Nome Social:</label>
+                    <input type="text" id="nome">
+                </div><div class="formulario">
+                    <label for="area_atuacao">Área de atuação:</label>
+                    <input type="text" id="area_atuacao">
+                </div>
+                <div class="formulario">
+                    <label for="tempo_area">Tempo de atuação:</label>
+                    <input type="text" id="tempo_area">
+                </div>
+                <div id="butoes">
+                    <a href="index.html" id="voltar_b">
+                     <button>Voltar</button>
+                </a> 
+                    <input type="submit" value="Proximo">
+                </div>
+            </form>
+
+        </div>
     </main>
+    <script>
+        const form1 = document.getElementById('form1');
+        const form2 = document.getElementById('form2');
+        const voltar = document.getElementById('voltar_b');
+
+        form2.style.display = 'none';
+
+        form1.addEventListener('submit',function(event){
+            event.preventDefault();
+
+            form1.style.display = 'none';
+            form2.style.display = 'flex'
+        });
+
+        voltar.addEventListener('click', function() {
+            event.preventDefault();
+            // Esconde o segundo formulário
+            form2.style.display = 'none';
+
+            // Mostra o primeiro formulário
+            form1.style.display = 'flex';
+        });
+
+        form2,add
+    </script>
 </body>
 </html>

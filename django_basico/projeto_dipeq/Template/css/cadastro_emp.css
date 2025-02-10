@@ -1,0 +1,66 @@
+div .primeiro_form{
+    background-image: url(../Imagens/marca_reduzida.png);
+    background-repeat: no-repeat;
+    background-position: 95% 95%;
+    background-size: 6%;
+    margin: 2em auto;
+    width: 50em;
+    display: flex;
+    border: 1px solid #839E65;
+    flex-direction: column;
+    padding: 2em;
+}
+
+.formulario{
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+}
+
+.primeiro_form input{
+    margin:1em auto;
+    height: 3em;
+    width: 40em;
+    border: 1px solid #839E65;
+}
+
+
+.primeiro_form input[type = submit]{
+    border: 1px solid #2D6B8C;
+    background-color: white;
+    width: 20em;
+}
+
+.primeiro_form input[type = submit]:hover{
+    background-color: #2D6B8C;
+    color: white;
+}
+
+#segundo_form{
+    display: none;
+}
+
+#butoes{
+    margin: auto;
+}
+
+#butoes button{
+    background-color: #FAF9F6;
+    width: 20em;
+    height: 3em;
+    border: 1px solid #BD272D;
+}
+
+#butoes button:hover{
+    background-color: #BD272D;
+    color: white;
+}
+
+#butoes input{
+    border: 1px solid #839E65;
+}
+
+#butoes input:hover{
+    background-color: #839E65;
+    color: white;
+}
